@@ -2,24 +2,29 @@ import { useRef } from "react";
 import "./Portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
+import tripPlannerAppImage from "../../trip-planner-app.png";
+import cvApp from "../../cvapp.png";
+
 const items = [
   {
     id: 1,
     title: "React Commerce",
-    img: "https://images.unsplash.com/photo-1683009427692-8a28348b0965?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: tripPlannerAppImage,
+
     desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam eius aliquam quo delectus laudantium officia ipsum commodi est numquam rerum.",
   },
 
   {
     id: 2,
     title: "Js app",
-    img: "https://images.unsplash.com/photo-1683009427692-8a28348b0965?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: cvApp,
     desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam eius aliquam quo delectus laudantium officia ipsum commodi est numquam rerum.",
   },
 
   {
     id: 3,
     title: "Angular app",
+    src: "../../trip-planner-app.png",
     img: "https://images.unsplash.com/photo-1683009427692-8a28348b0965?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam eius aliquam quo delectus laudantium officia ipsum commodi est numquam rerum.",
   },
@@ -27,6 +32,8 @@ const items = [
   {
     id: 4,
     title: "React Commerce",
+    src: "../../trip-planner-app.png",
+
     img: "https://images.unsplash.com/photo-1683009427692-8a28348b0965?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam eius aliquam quo delectus laudantium officia ipsum commodi est numquam rerum.",
   },
@@ -46,7 +53,7 @@ function Single({ item }) {
       <div className="container">
         <div className="wrapper">
           <div ref={ref} className="imageContainer">
-            <img src={item.img} alt="project" />
+            <img src={item.src} alt="project" />
           </div>
           <motion.div style={{ y }} className="textContainer">
             <h2>{item.title}</h2>
