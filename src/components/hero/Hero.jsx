@@ -50,13 +50,30 @@ function Hero() {
           initial="initial"
           animate="animate"
         >
-          <motion.h2 variants={textVariants}>TEONA MAGHRADZE</motion.h2>
-          <motion.h1 variants={textVariants}>Web Developer</motion.h1>
+          {/* <motion.h2 variants={textVariants}>TEONA MAGHRADZE</motion.h2> */}
+          <motion.h2 variants={textVariants}>Front-End Web Developer</motion.h2>
+          {/* <motion.h1 variants={textVariants}>Web Developer</motion.h1> */}
+          <motion.p>Hello</motion.p>
+
+          <div className="social">
+            <a href="https://github.com/teonamaghradze">
+              <img src="/github.svg" alt="github logo" />
+            </a>
+            <a href="https://www.linkedin.com/in/teona-maghradze-557639263/">
+              <img src="/linkedin.svg" alt="linkedin logo" />
+            </a>
+
+            <a href="mailto:maghradzeteo@gmail.com">
+              <img src="/at-solid.svg" alt="mail logo" />
+            </a>
+          </div>
           <motion.div className="buttons" variants={textVariants}>
-            <motion.button variants={textVariants}>
+            <motion.button className="button" variants={textVariants}>
               See the latest works
             </motion.button>
-            <motion.button variants={textVariants}>Contact me</motion.button>
+            <motion.button className="button" variants={textVariants}>
+              Contact me
+            </motion.button>
           </motion.div>
           <motion.img
             variants={textVariants}
@@ -72,11 +89,11 @@ function Hero() {
         initial="initial"
         animate="animate"
       >
-        Writer content creator infuencer
+        Front-end Web Developer
       </motion.div>
 
       <div className="imageContainer">
-        <img src="/hero.png" alt="" />
+        {/* <img src="/code-icon.png" alt="" /> */}
       </div>
     </div>
   );
