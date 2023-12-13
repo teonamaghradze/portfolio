@@ -16,17 +16,24 @@ function Parallax({ type }) {
     <div
       className="parallax"
       ref={ref}
+      // style={{
+      //   background:
+      //     type === "services"
+      //       ? "linear-gradient(180deg, #111132, #0c0c1d"
+      //       : "linear-gradient(180deg, #111132, #505064",
+      // }}
+
       style={{
-        background:
-          type === "services"
-            ? "linear-gradient(180deg, #111132, #0c0c1d"
-            : "linear-gradient(180deg, #111132, #505064",
+        // background: "linear-gradient(180deg, #253238, #f7d486, #f27a7d)",
+
+        background: "linear-gradient(180deg, #0c0c1d, #253238)",
       }}
     >
       <motion.h1 style={{ y: yText }}>
-        {type === "services" ? "What we do?" : "What we did?"}
+        {/* {type === "services" ? "What we do?" : "What we did?"} */}
+        Who Am I ?
       </motion.h1>
-      <motion.div className="mountains"></motion.div>
+      <motion.div></motion.div>
       <motion.div className="planets" style={{ y: yBg }}></motion.div>
       <motion.div style={{ x: yBg }} className="stars"></motion.div>
     </div>
