@@ -7,6 +7,8 @@ import react from "../../react.svg";
 import angular from "../../angular.svg";
 import git from "../../git-alt.svg";
 import teo from "../../teo.jpg";
+import ts from "../../Ts.png";
+import redux from "../../reduxx.png";
 
 function Aboutme() {
   return (
@@ -15,7 +17,7 @@ function Aboutme() {
         <div className="rectingle"></div>
         {/* <h1>Who Am I?</h1> */}
 
-        <h2>✈ My journey into the Web Development </h2>
+        <h2>🚀 My journey into the Web Development </h2>
         <p>
           My working experience is mostly in education field. I’ve always been
           interested in computer sciences but for some reasons I had never
@@ -43,7 +45,13 @@ function Aboutme() {
           <img src={scss} alt="" />
           <img src={git} alt="" />
           <img src={js} alt="" />
+          <img
+            style={{ marginTop: "3px", width: "44px", height: "44px" }}
+            src={ts}
+            alt=""
+          />
           <img src={react} alt="" />
+          <img src={redux} alt="" />
           <img src={angular} alt="" />
         </div>
       </div>

@@ -4,37 +4,42 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 import tripPlannerAppImage from "../../trip-planner-app.png";
 import cvApp from "../../cvapp.png";
+import space from "../../space.png";
+import splitter from "../../splitter.png";
 
 const items = [
   {
     id: 1,
-    title: "React Commerce",
-    src: tripPlannerAppImage,
+    title: "CV-APP",
+    src: cvApp,
 
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam eius aliquam quo delectus laudantium officia ipsum commodi est numquam rerum.",
+    desc: "At the end of my study in EPAM/UPSKILL I made a cv-app project,  I used: ReactJS, Redux, Fetched data from Mirage.js",
+    link: "https://react-cv-app-git-main-teonamaghradze.vercel.app/",
   },
 
   {
     id: 2,
-    title: "Js app",
-    src: cvApp,
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam eius aliquam quo delectus laudantium officia ipsum commodi est numquam rerum.",
+    title: "Trip Planner",
+    src: tripPlannerAppImage,
+
+    desc: "responsive at the end of my TBC IT Academy, I had to make final project about the topic of my choice, so I made a trip planner project, using Angular, API,",
+    link: "https://final-project-angular-6est.vercel.app/",
   },
 
   {
     id: 3,
-    title: "Angular app",
-    src: "../../trip-planner-app.png",
-    img: "https://images.unsplash.com/photo-1683009427692-8a28348b0965?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam eius aliquam quo delectus laudantium officia ipsum commodi est numquam rerum.",
+    title: "Space Tourism",
+    src: space,
+
+    desc: "uisquam eius aliquam quo delectus laudantium officia ipsum commodi est numquam rerum.",
+    githubRepo: "",
   },
 
   {
     id: 4,
-    title: "React Commerce",
-    src: "../../trip-planner-app.png",
+    title: "Split Calculator",
+    src: splitter,
 
-    img: "https://images.unsplash.com/photo-1683009427692-8a28348b0965?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam eius aliquam quo delectus laudantium officia ipsum commodi est numquam rerum.",
   },
 ];
@@ -58,7 +63,9 @@ function Single({ item }) {
           <motion.div style={{ y }} className="textContainer">
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+            <a target="blank" href={item.link}>
+              <button>See Demo</button>
+            </a>
           </motion.div>
         </div>
       </div>
