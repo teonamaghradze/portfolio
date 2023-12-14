@@ -1,8 +1,15 @@
+@import "../../app.scss";
+
 .aboutme {
   margin: 5rem;
   display: flex;
   align-items: center;
   gap: 10rem;
+
+  @include mobile {
+    margin: 5px;
+  }
+
   .rectingle {
     width: 80px;
     height: 80px;
@@ -27,6 +34,9 @@
     .logos {
       display: flex;
       gap: 10px;
+      @include mobile {
+        display: inline;
+      }
 
       img {
         width: 50px;
@@ -41,11 +51,6 @@
   // --primary: #88d5bf;
   // --secondary: #5d6bf8;
   // --third: #e27fcb;
-  // --background: #005;
-  // --primary: #93e3aa;
-  // --secondary: #93e3aa;
-
-  // --third: #93e3aa;
 
   --primary: #88d5bf;
   --secondary: #93e3aa;
@@ -53,10 +58,11 @@
 }
 
 .container {
-  // align-items: center;
   display: flex;
-  // height: 100vh;
-  // justify-content: center;
+
+  @include tablet {
+    display: none;
+  }
 }
 
 .shape {

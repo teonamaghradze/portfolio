@@ -31,13 +31,13 @@ button {
 }
 
 @mixin mobile {
-  @media (max-width: 738px) {
+  @media (max-width: 750px) {
     @content;
   }
 }
 
 @mixin tablet {
-  @media (max-width: 1024px) {
+  @media (max-width: 1120px) {
     @content;
   }
 }

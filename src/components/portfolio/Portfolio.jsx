@@ -13,8 +13,9 @@ const items = [
     title: "CV-APP",
     src: cvApp,
 
-    desc: "At the end of my study in EPAM/UPSKILL I made a cv-app project,  I used: ReactJS, Redux, Fetched data from Mirage.js",
+    desc: "At the end of the UpSkill program, I had to build a fully responsive React-based CV app. Its purpose is personal portfolio creation, and the target users are those in need of a new CV. Tools I used are: Redux, React, HTML, SCSS, API. What fascinated me most was that it seemed hard at first, but during the process, it became easier, and I really enjoyed it.",
     link: "https://react-cv-app-git-main-teonamaghradze.vercel.app/",
+    githubRepo: "https://github.com/teonamaghradze/react-cv-app",
   },
 
   {
@@ -22,8 +23,9 @@ const items = [
     title: "Trip Planner",
     src: tripPlannerAppImage,
 
-    desc: "responsive at the end of my TBC IT Academy, I had to make final project about the topic of my choice, so I made a trip planner project, using Angular, API,",
+    desc: "At the end of the TBC IT Academy, I had to make final project about the topic of my choice, so I made a fully responsive trip planner application, where users can find hotels, see cities and destinations on the map and also trip plans that are made by other users. I used: Angular, API, HTML/SCSS.",
     link: "https://final-project-angular-6est.vercel.app/",
+    githubRepo: "https://github.com/teonamaghradze/final-project-angular",
   },
 
   {
@@ -31,16 +33,19 @@ const items = [
     title: "Space Tourism",
     src: space,
 
-    desc: "uisquam eius aliquam quo delectus laudantium officia ipsum commodi est numquam rerum.",
-    githubRepo: "",
+    desc: "I made a Space Tourism App, using ReactJs and HTML/SCSS. It was a fun little project to build",
+    githubRepo: "https://github.com/teonamaghradze/space-tourism",
+    link: "https://space-tourism-uqxy.vercel.app/space-tourism",
   },
 
   {
     id: 4,
-    title: "Split Calculator",
+    title: "Tip Calculator",
     src: splitter,
+    link: "https://tip-calc-pied.vercel.app/",
 
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam eius aliquam quo delectus laudantium officia ipsum commodi est numquam rerum.",
+    desc: "I made tip calculator using only JavaScript and CSS/HTML. Users can enter bill, tip and calculate total price that's need to be paid.",
+    githubRepo: "https://github.com/teonamaghradze/tip-calc",
   },
 ];
 
@@ -54,7 +59,7 @@ function Single({ item }) {
   const y = useTransform(scrollYProgress, [0, 1], [-250, 250]);
 
   return (
-    <section>
+    <section id="Portfolio">
       <div className="container">
         <div className="wrapper">
           <div ref={ref} className="imageContainer">
@@ -66,6 +71,12 @@ function Single({ item }) {
             <a target="blank" href={item.link}>
               <button>See Demo</button>
             </a>
+            <div>
+              <a className="github-repo" target="blank" href={item.githubRepo}>
+                <img src="/github.svg" alt="github logo" />
+                <span>Github Repository</span>
+              </a>
+            </div>
           </motion.div>
         </div>
       </div>

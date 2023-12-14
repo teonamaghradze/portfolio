@@ -1,5 +1,4 @@
 import "./Contact.scss";
-// import github from "../../../public/github.svg";
 
 function Contact() {
   return (
@@ -9,7 +8,7 @@ function Contact() {
         <h1>Contact Information</h1>
         <a target="blank" href="https://github.com/teonamaghradze">
           <img src="/github.svg" alt="github logo" />
-          <span>maghradzeteona</span>
+          <span>teonamaghradze</span>
         </a>
         <a
           target="blank"

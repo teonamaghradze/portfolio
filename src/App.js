@@ -11,12 +11,12 @@ function App() {
   return (
     <div>
       <Cursor />
-      <section id="Homepage">
+      <section id="Home">
         <Navbar />
         <Hero />
       </section>
 
-      <section id="Portfolio">
+      <section>
         <Parallax type="services" />
       </section>
 

@@ -41,6 +41,9 @@
     height: 100%;
     position: absolute;
     z-index: 2;
+    @include mobile {
+      display: none;
+    }
   }
 
   .stars {

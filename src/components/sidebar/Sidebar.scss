@@ -7,7 +7,6 @@
   justify-content: center;
   background-color: white;
   color: #253238;
-  // border: 1px solid #253238;
 
   .bg {
     position: fixed;
@@ -16,7 +15,6 @@
     bottom: 0;
     width: 400px;
     background: white;
-    // border: 1px solid #253238;
     z-index: 999;
 
     @include mobile {
@@ -34,7 +32,6 @@
       gap: 20px;
 
       background-color: #ddfbe5;
-      // border: 1px solid #253238;
 
       a {
         font-size: 30px;

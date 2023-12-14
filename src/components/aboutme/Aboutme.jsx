@@ -15,7 +15,6 @@ function Aboutme() {
     <div className="aboutme">
       <div className="txt">
         <div className="rectingle"></div>
-        {/* <h1>Who Am I?</h1> */}
 
         <h2>🚀 My journey into the Web Development </h2>
         <p>
