@@ -6,10 +6,20 @@ import tripPlannerAppImage from "../../trip-planner-app.png";
 import cvApp from "../../cvapp.png";
 import space from "../../space.png";
 import splitter from "../../splitter.png";
+import foodie from "../../foodie.png";
 
 const items = [
   {
     id: 1,
+    title: "Foodie - Food Delivery",
+    src: foodie,
+
+    desc: "I built Foodie app using ReactJs, Redux. It is the app, where you can filter the food you like by category, add them to the shopping card, delete, increase and decrease the quantity",
+    link: "https://foodie-front-hpw9-git-main-teonamaghradze.vercel.app/home",
+    githubRepo: "https://github.com/teonamaghradze/FoodieFront",
+  },
+  {
+    id: 2,
     title: "CV-APP",
     src: cvApp,
 
@@ -19,7 +29,7 @@ const items = [
   },
 
   {
-    id: 2,
+    id: 3,
     title: "Trip Planner",
     src: tripPlannerAppImage,
 
@@ -29,7 +39,7 @@ const items = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: "Space Tourism",
     src: space,
 
@@ -39,7 +49,7 @@ const items = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "Tip Calculator",
     src: splitter,
     link: "https://tip-calc-pied.vercel.app/",
