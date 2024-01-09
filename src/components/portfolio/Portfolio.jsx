@@ -11,7 +11,7 @@ import foodie from "../../foodie.png";
 const items = [
   {
     id: 1,
-    title: "Foodie - Food Delivery",
+    title: "Foodie - Delivery",
     src: foodie,
 
     desc: "I built Foodie app using ReactJs, Redux. It is the app, where you can filter the food you like by category, add them to the shopping card, delete, increase and decrease the quantity",
