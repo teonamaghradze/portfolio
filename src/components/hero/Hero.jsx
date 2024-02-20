@@ -75,7 +75,7 @@ function Hero() {
           <motion.img
             variants={textVariants}
             src={scrollDown}
-            alt=""
+            alt="scrolldown"
             animate="scrollButton"
           />
         </motion.div>

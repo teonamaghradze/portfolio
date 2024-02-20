@@ -23,7 +23,7 @@ const items = [
   },
   {
     id: 1,
-    title: "VideVerse",
+    title: "VideoVerse",
     src: videoversee,
     desc: "I built a fully responsive YouTube-like app using ReactJS, an API, and MaterialUI. In this app, you can watch videos, filter them by category, search for any video, and view YouTube channels along with their details.",
     link: "https://videoverse-one.vercel.app/",
@@ -31,7 +31,7 @@ const items = [
   },
   {
     id: 2,
-    title: "Foodie - Delivery",
+    title: "Foodie Delivery",
     src: foodie,
 
     desc: "I built Foodie app using ReactJs, Redux. It is the app, where you can filter the food you like by category, add them to the shopping card, delete, increase and decrease the quantity",
@@ -43,7 +43,7 @@ const items = [
     title: "CV-APP",
     src: cvApp,
 
-    desc: "At the end of the UpSkill program, I had to build a fully responsive React-based CV app. Its purpose is personal portfolio creation, and the target users are those in need of a new CV. Tools I used are: Redux, React, HTML, SCSS, API. What fascinated me most was that it seemed hard at first, but during the process, it became easier, and I really enjoyed it.",
+    desc: "At the end of the UpSkill program, I built a fully responsive CV app. Its purpose is personal portfolio creation, the target users are those in need of a new CV. Tools I used are: Redux, React, SCSS, API. What fascinated me most was that it seemed hard at first, but during the process, it became easier.",
     link: "https://react-cv-app-git-main-teonamaghradze.vercel.app/",
     githubRepo: "https://github.com/teonamaghradze/react-cv-app",
   },
