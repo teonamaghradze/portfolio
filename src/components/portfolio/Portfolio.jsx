@@ -7,10 +7,30 @@ import cvApp from "../../cvapp.png";
 import space from "../../space.png";
 import splitter from "../../splitter.png";
 import foodie from "../../foodie.png";
+import ecommerce from "../../ecommerce.png";
+import videoversee from "../../videoversee.png";
+import dashboard from "../../dashboard.png";
 
 const items = [
   {
+    id: 0,
+    title: "E-commerce store",
+    src: ecommerce,
+
+    desc: "I built a fully responsive E-commerce app using ReactJs, Redux, Firebase, TailwindCss. You can add products to the cart, change their quantity, reset the cart, sign in with google or github and see the reviews of the items",
+    link: "https://e-commerce-liart-five.vercel.app",
+    githubRepo: "https://github.com/teonamaghradze/e-commerce",
+  },
+  {
     id: 1,
+    title: "VideVerse",
+    src: videoversee,
+    desc: "I built a fully responsive YouTube-like app using ReactJS, an API, and MaterialUI. In this app, you can watch videos, filter them by category, search for any video, and view YouTube channels along with their details.",
+    link: "https://videoverse-one.vercel.app/",
+    githubRepo: "https://github.com/teonamaghradze/videoverse",
+  },
+  {
+    id: 2,
     title: "Foodie - Delivery",
     src: foodie,
 
@@ -19,7 +39,7 @@ const items = [
     githubRepo: "https://github.com/teonamaghradze/FoodieFront",
   },
   {
-    id: 2,
+    id: 3,
     title: "CV-APP",
     src: cvApp,
 
@@ -29,17 +49,27 @@ const items = [
   },
 
   {
-    id: 3,
+    id: 4,
+    title: "Admin Dashboard ",
+    src: dashboard,
+
+    desc: "I built admin panel, that renders users, products, charts, tables. I used ReactJS, Sass, Context to handle darkmode functionality, and Material UI",
+    link: "https://dashboard-mu-gold-99.vercel.app/",
+    githubRepo: "https://github.com/teonamaghradze/dashboard",
+  },
+
+  {
+    id: 5,
     title: "Trip Planner",
     src: tripPlannerAppImage,
 
-    desc: "At the end of the TBC IT Academy, I had to make final project about the topic of my choice, so I made a fully responsive trip planner application, where users can find hotels, see cities and destinations on the map and also trip plans that are made by other users. I used: Angular, API, HTML/SCSS.",
+    desc: "At the end of the TBC IT Academy, I had to make final project about the topic of my choice, so I made a fully responsive trip planner application, where users can find hotels, see cities and destinations on the map and also trip plans that are made by other users. I used: Angular, TypeScript, API, HTML/SCSS.",
     link: "https://final-project-angular-6est.vercel.app/",
     githubRepo: "https://github.com/teonamaghradze/final-project-angular",
   },
 
   {
-    id: 4,
+    id: 6,
     title: "Space Tourism",
     src: space,
 
@@ -49,7 +79,7 @@ const items = [
   },
 
   {
-    id: 5,
+    id: 7,
     title: "Tip Calculator",
     src: splitter,
     link: "https://tip-calc-pied.vercel.app/",

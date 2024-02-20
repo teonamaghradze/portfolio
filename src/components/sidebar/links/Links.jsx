@@ -25,11 +25,11 @@ const itemVariants = {
   },
 };
 
-function Links() {
+function Links({ className }) {
   const items = ["Home", "About me", "Portfolio", "Contact"];
 
   return (
-    <motion.div className="links" variants={variants}>
+    <motion.div className={`links ${className}`} variants={variants}>
       {items.map((item) => (
         <motion.a
           href={`#${item}`}
